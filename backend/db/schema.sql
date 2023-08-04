@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS coffee (
+   ID BIGINT PRIMARY KEY,
+   data JSONB
+);

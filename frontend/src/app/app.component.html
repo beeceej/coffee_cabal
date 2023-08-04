@@ -1,0 +1,31 @@
+<h1>What regions produces the least acidic coffee?</h1>
+<ul *ngFor="let item of leastAcidicCoffee.getValue()">
+  <li>
+    <p>
+      <b>{{ item.region }}</b>
+    </p>
+    Average Acidity: {{ item.average_acidity }}
+  </li>
+</ul>
+
+<h1>What Processing Methods produces the most balanced coffee?</h1>
+<ul *ngFor="let item of bestBalanceByProcessingMethod.getValue()">
+  <li>
+    <p>
+      <b>{{ item.processing_method }}</b>
+    </p>
+    Average Balance Score: {{ item.average_balance }}
+  </li>
+</ul>
+
+<h1>Which countries exported the most coffee?</h1>
+<ul *ngFor="let item of largestExporter.getValue()">
+  <li>
+    <p>
+      <b>{{ item.country_of_origin }}</b>
+    </p>
+    {{ item.amount }} bags exported
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

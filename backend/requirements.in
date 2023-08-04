@@ -1,0 +1,4 @@
+fastapi
+pydantic-settings
+uvicorn
+psycopg2-binary
